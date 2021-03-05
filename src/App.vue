@@ -5,9 +5,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import WithDot from "./.foo/Test.vue";
 import WithoutDot from "./foo/Test.vue";
+
+let x: string;
+x = 10;
 
 export default defineComponent({
   components: {
